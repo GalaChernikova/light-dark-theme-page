@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light & dark mode landing</title>
+
+    <link rel="stylesheet" href="./light.css">
+    <link rel="stylesheet" href="./dark.css">
+    <link rel="stylesheet" href="./lightdarkanimation.css">
+    <link rel="stylesheet" href="./lightdarkmedia.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <button class="nav-button">
+                <span class="nav-button-icon"></span>
+            </button>
+
+            <div class="mobile-nav">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="links">
+                <ul class="links-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="buttons">
+                <div class="mode">
+                    <button onclick="changeMode()" id="mode">Mode</button>
+                </div>
+
+                <div class="sign-in">
+                    <button id="signbtn" onclick="toggleVisibility('sign');">Sign in</button>
+                </div>
+
+                <div class="register">
+                    <button id="regbtn"  onclick="toggleVisibility('reg');">Register</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="text">
+                <h1>Sign In to Recharge Direct</h1>
+
+                <p>
+                    if you don’t an account
+                    you can <a href="#">Register here!</a>
+                </p>
+            </div>
+
+            <div class="mainpic">
+                <img src="./images/mainpic.png" alt="mainpic">
+            </div>
+
+            <div class="sign-in-form"  id="sign">
+                <form action="" class="sign">
+                    <label for="email">
+                        <input type="email" name="email" id="email" placeholder="  Enter Email">
+                    </label>
+
+                    <label for="password">
+                        <input type="password" name="password" id="password" placeholder="  Enter password">
+                    </label>
+                </form>
+
+                <div class="recover">
+                    <a href="#">Recover Password ?</a>  
+                </div>
+
+                <div class="sign-button">
+                    <button>Sign In</button>
+                </div>
+
+                <div class="social">
+                    <p>Or continue with</p>
+
+                    <ul class="social-list">
+                        <li><a href="#"><img src="./images/fb.svg" alt="fb"></a></li>
+                        <li><a href="#"><img src="./images/apple.svg" alt="apple"></a></li>
+                        <li><a href="#"><img src="./images/google.svg" alt="google"></a></li>
+                    </ul>
+                </div> 
+            </div>
+
+
+            <div class="reg-form" id="reg" style="display: none;">
+                <form action="" class="reg">
+                    <label for="name">
+                        <input type="text" name="name" id="name" placeholder="  Your name">
+                    </label>
+
+                    <label for="email">
+                        <input type="email" name="email" id="email" placeholder="  Enter Email">
+                    </label>
+
+                    <label for="password">
+                        <input type="password" name="password" id="password" placeholder="  Enter password">
+                    </label>
+
+                    <div class="have-acc">
+                        <a href="#">Already have an account ?</a>  
+                    </div>
+    
+                    <div class="reg-button">
+                        <button>Register</button>
+                    </div>
+                </form>   
+             
+                <div class="social">
+                    <p>Or continue with</p>
+
+                    <ul class="social-list">
+                        <li><a href="#"><img src="./images/fb.svg" alt="fb"></a></li>
+                        <li><a href="#"><img src="./images/apple.svg" alt="apple"></a></li>
+                        <li><a href="#"><img src="./images/google.svg" alt="google"></a></li>
+                    </ul>
+                </div>  
+            </div>
+                
+        </div>
+
+    </main>
+
+    <script src="./mode.js"></script>
+</body>
+</html>

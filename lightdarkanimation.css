@@ -1,0 +1,60 @@
+.links-list li a:hover {
+    font-size: 19px;
+    transition: all 0.5s ease-out;
+}
+
+#signbtn:hover,
+#regbtn:hover {
+    position: relative;
+    background-color: transparent;
+    box-shadow: none; 
+}
+
+#signbtn:hover::after,
+#regbtn:hover::after {
+    position: absolute;
+    content: "";
+    display: block;
+
+    width: 25px;
+    height: 2px;
+    background-color: #4461F2;
+    border-radius: 10px;
+
+    bottom: 0;
+    left: 50px;
+}
+
+#mode:hover {
+    background: #14162E;
+    color: #FFFFFF;
+    transition: all 0.5s ease-out;
+}
+
+
+
+
+.text p a:hover {
+    text-decoration: underline;
+    transition: all 0.5s ease-out;
+}
+
+.recover a:hover {
+    text-decoration: underline;
+    transition: all 0.5s ease-out;
+}
+
+.sign-button button:hover {
+    background-color: #1778F2;
+    box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.13);
+    transition: all 0.5s ease-out;
+}
+
+.social-list li:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.13);
+    transition: all 0.5s ease-out;
+}
+
+
+

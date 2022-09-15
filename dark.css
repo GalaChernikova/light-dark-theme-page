@@ -1,0 +1,38 @@
+.dark-mode {
+    background-color: #14162E;
+    color: #FFFFFF;
+}
+
+.dark-mode .links-list li a {
+    color: #FFFFFF;
+}
+
+.dark-mode .social-list li {
+    background-color: #DDDFDD;
+}
+
+.dark-mode #mode {
+    background: #FFFFFF;
+    color: #4461F2;
+}
+
+.dark-mode #mode:hover {
+    background: #EAF0F7;
+    color: #4F555A;
+    transition: all 0.5s ease-out;
+}
+
+.dark-mode .links-list li a::after {
+    background-color: #FFFFFF;
+}
+
+.dark-mode .nav-button-icon,
+.dark-mode .nav-button-icon::before,
+.dark-mode .nav-button-icon::after {
+    background-color: #FFFFFF;
+}
+
+.dark-mode .nav-button-close .nav-button-icon::before,
+.dark-mode .nav-button-close .nav-button-icon::after {
+    background-color: #000000;
+}

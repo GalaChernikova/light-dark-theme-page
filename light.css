@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F6F6F6;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.main-header,
+.container {
+    max-width: 1540px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/* header */
+.main-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 100px;
+    padding-bottom: 20px;
+
+}
+
+.links,
+.links-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 495px;
+    width: 100%;
+}
+
+.links-list li a {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+
+    text-decoration: none;
+    color: #000000;
+
+    width: 100%;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 400px;
+    width: 100%;
+}
+
+.buttons button {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 21px;
+    border: none;
+
+    color: #4461F2;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+
+    padding: 10px 20px;
+
+    width: 115px;
+
+}
+
+
+
+/* main */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-image: url("./images/bckgr.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 50%;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 77px;
+
+    margin-bottom: 90px;
+}
+
+.text p {
+    max-width: 290px;
+    width: 100%;
+
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+.text p a {
+    color: #4461F2;
+    text-decoration: none;
+}
+
+.mainpic {
+    max-width: 545px;
+    width: 100%;
+}
+
+
+
+/* sign-in form */
+.sign-in-form,
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 400px;
+    width: 100%;
+
+    margin-left: 20px;
+}
+
+.sign-in-form input,
+.reg-form input {
+    width: 400px;
+
+    background: #EAF0F7;
+    border-radius: 10px;
+    border: none;
+
+    color: #4F555A;
+    font-size: 17px;
+
+    padding: 20px 0;
+
+    margin-bottom: 20px;
+}
+
+.recover,
+.have-acc {
+    margin-left: auto;
+    text-align: end;
+}
+
+.recover a,
+.have-acc a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 77px;
+    letter-spacing: 0.1em;
+
+    color: #C7C7C7;
+    text-decoration: none;
+}
+
+.sign-button {
+    margin-bottom: 20px;
+}
+
+.sign-button button,
+.reg-button button {
+    width: 400px;
+
+    padding: 20px 5px;
+
+    border: none;
+    background: #4461F2;
+    box-shadow: 0px 12px 21px 4px rgba(68, 97, 242, 0.15);
+    border-radius: 10px;
+
+    color: #FFFFFF;
+
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: 0.09em;
+}
+
+.social {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.social p {
+    position: relative;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 77px;
+    letter-spacing: 0.09em;
+
+    color: #ACADAC;
+
+    margin-bottom: 20px;
+}
+
+.social p::before {
+    position: absolute;
+    content: "";
+    display: block;
+
+    width: 115px;
+    height: 2px;
+
+    background-color: #DFDFDF;
+
+    top: 50%;
+    left: -5px;
+}
+
+.social p::after {
+    position: absolute;
+    content: "";
+    display: block;
+
+    width: 115px;
+    height: 2px;
+
+    background-color: #DFDFDF;
+
+    top: 50%;
+    left: 290px;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    max-width: 400px;
+    width: 100%;
+}
+
+.social-list li {
+    width: 120px;
+
+    padding: 20px 0;
+
+    border: 2px solid #DFDFDF;
+    border-radius: 10px;
+}
+
+.social-list li img {
+    width: 28px;
+    height: 28px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/* nav button */
+.nav-button {
+    position: relative;
+    z-index: 9;
+    display: none;
+    height: 25px;
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.nav-button:focus,
+.nav-button:active {
+    outline: none;
+}
+
+/* X */
+.nav-button-close .nav-button-icon {
+    background-color: transparent;
+}
+
+.nav-button-close .nav-button-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-button-close .nav-button-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* nav icon */
+.nav-button-icon {
+    display: block;
+    position: relative;
+    background-color: black;
+    width: 42px;
+    height: 3px;
+    border: none;
+}
+
+.nav-button-icon::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    display: block;
+    background-color: black;
+    width: 42px;
+    height: 3px;
+}
+
+.nav-button-icon::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: '';
+    display: block;
+    background-color: black;
+    width: 42px;
+    height: 3px;
+}
+
+
+/* mobile nav */
+.mobile-nav {
+    position: fixed;
+    z-index: 8;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100%;
+    background-color: #EAF0F7;
+    opacity: 1;
+    padding: 70px 0 50px 70px;
+} 
+
+.mobile-nav .nav {
+    display: block;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.mobile-nav .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mobile-nav .nav ul li {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.mobile-nav .nav ul li a {
+    text-decoration: none;
+    color: black;
+}
